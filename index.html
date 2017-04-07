@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="star-wars">
+	<head>
+		<title>Star Wars</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+		<script type="text/javascript" src="./js/vender/angular.min.js"></script>
+		<script type="text/javascript" src="./js/app.js"></script>
+		<script type="text/javascript" src="./js/module_directives.js"></script>
+		<script type="text/javascript" src="./js/vender/jquery-3.2.0.min.js"></script>
+		<script type="text/javascript" src="./js/vender/bootstrap.min.js"></script>
+	</head>
+	<body ng-controller='star-warsController as starWars'>
+		<header class="header">
+				<img class="header__logotip" src="./images/star-wars-header.png">
+		</header>
+		<div class="wrapper">
+			<ul class="nav nav-pills" >
+				<li class="nav-pills_item" ng-class="{active: starWars.isSelected('')}"><a href class="nav__link" ng-click="starWars.setGender('')">All</a></li>
+				<li ng-class="{active: starWars.isSelected('male')}"><a href class="nav__link" ng-click="starWars.setGender('male')">Male</a></li>
+				<li ng-class="{active: starWars.isSelected('female')}"><a href class="nav__link" ng-click="starWars.setGender('female')">Female</a></li>
+				<li ng-class="{active: starWars.isSelected('other')}"><a href class="nav__link" ng-click="starWars.setGender('other')">Other</a></li>
+			</ul>
+			<div class="cards" ng-repeat="human in starWars.peoples | filter:starWars.gender">
+				<a href class="cards__link" ng-click="starWars.onClick(human.name)">				
+					<img class="cards__human-image img-thumbnail" ng-src="./images/person/{{human.name}}.jpg">		
+					<h3 class="cards__name">{{human.name}}</h3>
+					<div class="cards__gender">Gender: {{human.gender}}</div>
+				</a>	
+			</div>
+			<card-info></card-info>
+		</div>
+	</body>
+</html>

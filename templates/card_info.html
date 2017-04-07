@@ -1,0 +1,49 @@
+<div class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<img class="card-info-image" ng-src="./images/person/{{starWars.peoples[starWars.index].name}}.jpg">
+				<div class="card-info__title">{{starWars.peoples[starWars.index].name}}</div>		
+			</div>
+			<div class="modal-body">		
+				<table class="table-propery">
+					<tr>
+						<td class="table-propery__propery">name:</td>
+						<td class="table-propery__value">{{starWars.peoples[starWars.index].name}}</td>
+					</tr>
+					<tr>
+						<td class="table-propery__propery">height:</td>
+						<td class="table-propery__value">{{starWars.peoples[starWars.index].height}}</td>
+					</tr>
+					<tr>
+						<td class="table-propery__propery">mass: </td>
+						<td class="table-propery__value">{{starWars.peoples[starWars.index].mass}}</td>
+					</tr>
+					<tr>
+						<td class="table-propery__propery">hair_color:</td>
+						<td class="table-propery__value">{{starWars.peoples[starWars.index].hair_color}}</td>
+					</tr>
+					<tr>
+						<td class="table-propery__propery">skin_color:</td>
+						<td class="table-propery__value">{{starWars.peoples[starWars.index].skin_color}}</td>
+					</tr>
+					<tr>
+						<td class="table-propery__propery">eye_color:</td>
+						<td class="table-propery__value">{{starWars.peoples[starWars.index].eye_color}}</td>
+					</tr>
+					<tr>
+						<td class="table-propery__propery">birth_year:</td>
+						<td class="table-propery__value">{{starWars.peoples[starWars.index].birth_year}}</td>
+					</tr>
+					<tr>
+						<td class="table-propery__propery">gender:</td>
+						<td class="table-propery__value">{{starWars.peoples[starWars.index].gender}}</td>
+					</tr>
+				</table>			
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>

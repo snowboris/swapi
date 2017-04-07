@@ -1,0 +1,100 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: url('../images/background.jpg') repeat-y 0 0;
+}
+
+.header__logotip{
+	width: 100%;
+	height: 200px;
+}
+
+.wrapper{
+	width: 80%;
+	margin: 0 auto 0;
+}
+
+.nav-pills{
+	width: 25%;
+	margin: 0 auto;
+	text-align: center;
+	background: rgba(221, 221, 221, 0.5);
+	color: black;
+	font-weight: bold;
+}
+
+.nav-pills_item{
+
+}
+
+ul.nav-pills a.nav__link{
+	color: black;
+}
+
+.cards{
+	width: 190px;
+	height: 190px;
+	display: inline-block;
+	margin-right: 20px;
+	margin-top: 40px;
+	vertical-align: top;
+}
+
+.cards:nth-of-type(5n){
+	margin-right: 0;
+}
+
+.cards:hover{
+	border: 3px solid blue;
+	border-radius: 8px;
+	background: rgba(0, 120, 201, 0.5);
+}
+
+.cards__human-image{
+	width: 165px;
+	height: 125px;
+	margin: 10px auto 0;
+	display: block;
+
+}
+
+.cards__name{
+	margin: 10px 0 0 20px;
+	font-size: 18px;
+	text-align: center;
+}
+
+.cards__gender{
+	text-align: center;
+}
+
+.cards__link:hover{
+	text-decoration: none;
+	color: white;
+}
+
+.card-info-image{
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	display: block;
+}
+
+.card-info__title{
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.table-propery__propery{
+	font-weight: bold;
+	text-align: right;
+}
+
+.table-propery__value{
+	padding-left: 20px;
+}
